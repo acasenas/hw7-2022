@@ -12,6 +12,8 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	video.play();
+	document.querySelector("#volume").textContent = document.querySelector("#slider").value;
+
 });
 
 //Pauses the Video 
